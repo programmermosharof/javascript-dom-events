@@ -7,12 +7,38 @@
 </head>
 <body>
 
-    <h1>Hi Dom doma dom dom</h1>
-
+    <h1 id="dom">Hi Dom doma dom dom</h1>
+<!-- option 1 for event handler -->
     <button onclick="console.log(7);">Click Me</button>
     <input type="text">
     <button onclick="console.log(63);">Another button</button>
     <button onclick="console.log('I am Clicked');">Third button</button>
+
+    <!-- option 2 click event handler -->
+     <button id="btn" onclick="makeYellow()">Make Yellow</button>
+
+     <button onclick="makeGreen()">Mack Green</button>
+
+     <br>
+
+     <!-- option 3: get element by id and then set onclick to a function -->
+
+     <button id="btn-blue">Make Blue</button>
+
+     <button id="color">Tomi Color Paltao</button>
+
+     <!-- option 4: addEventListener -->
+
+     <button id="make-bg-color">Make BG Color</button>
+
+     <script>
+        // document.getElementById().addEventListener('event type', handler)
+
+        document.getElementById('make-bg-color').addEventListener('click', function (){
+               document.body.style.backgroundColor = '	#800000';
+        })
+     </script>
+   
     
 
     <script src="javascript/index.js"></script>
